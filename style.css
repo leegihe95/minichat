@@ -1,3 +1,59 @@
+body{
+    width: 80%;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+}
 form {
     text-align: center;
+    margin: 20px;
+}
+
+.dispBlock {
+    display: inline-block;
+    width: 75px;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+input[type=submit]{
+    padding: 5px 10px;
+    margin: 5px 0;
+    background-color: green;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: white;
+    color: green;
+
+}
+#refresh,
+#showMore{
+    padding: 5px 10px;
+    margin: 5px 0;
+    background-color: white;
+    color: green;
+    border: 1px solid;
+    border-radius: 5px;
+    
+}
+#refresh:hover,
+#showMore:hover{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+#chatTools{
+    text-align: center;
+}
+#chatResult{
+    display: grid;
+    justify-content: center;
 }

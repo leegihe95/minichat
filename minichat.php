@@ -8,28 +8,27 @@
     <title>Minichat</title>
 </head>
 <body>
+    <h1>LIVE MINICHAT</h1>
     <form action="minichat_post.php" method="POST">
         <?php
         $pseudo = isset($_COOKIE['pseudo']) ? $_COOKIE['pseudo'] : '';
         ?>
-        <label for="pseudo">Pseudo: </label>
+        <label class="dispBlock" for="pseudo">Pseudo: </label>
         <input type="text" id="pseudo" name="pseudo" value="<?php echo $pseudo; ?>" autofocus>
         <br>
-        <label for="message">Message: </label>
+        <label class="dispBlock" for="message">Message: </label>
         <input type="text" id="message" name="message">
         <br>
         <input type="submit" value="Send">
     </form>
-        <br>
-        <br>
-    <div>
+    <div id="chatTools">
         <button id="refresh">Refresh</button>
         <button id="showMore">Show More</button>
         <br>
         <span>Choose the range: </span>
         <input type="radio" name="range" id="ten"><label for="ten">10</label>
         <input type="radio" name="range" id="twenty"><label for="twenty">20</label>
-        <input type="radio" name="range" id="all"><label for="all">all</label>
+        <input type="radio" name="range" id="all"><label for="all">Show all</label>
     </div>
     <div id="chatResult">
         <?php
